@@ -1,0 +1,38 @@
+name: Bug report (general / not sure where)
+description: Use this only if you do not know which platform repository is the right one. Platform-specific bugs belong in GabeTeX-macOS, GabeTeX-Linux or GabeTeX-Windows.
+title: "[Bug]: "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        This is the umbrella repository (website, community files, project overview). **Bugs in the apps belong in the
+        platform repository**: [macOS](https://github.com/gabe-rbo/GabeTeX-macOS/issues/new/choose),
+        [Linux](https://github.com/gabe-rbo/GabeTeX-Linux/issues/new/choose) or
+        [Windows](https://github.com/gabe-rbo/GabeTeX-Windows/issues/new/choose). Please search existing issues first.
+        Issues in Portuguese are welcome too. Pode escrever em português.
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS
+        - Linux
+        - Windows
+        - Website
+        - Not sure / other
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What went wrong, and what did you expect instead? Include the app version and your OS version.
+    validations:
+      required: true
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to reproduce
+    validations:
+      required: true

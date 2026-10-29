@@ -1,0 +1,9 @@
+[submodule "GabeTeX-macOS"]
+	path = GabeTeX-macOS
+	url = https://github.com/gabe-rbo/GabeTeX-macOS.git
+[submodule "GabeTeX-Linux"]
+	path = GabeTeX-Linux
+	url = https://github.com/gabe-rbo/GabeTeX-Linux.git
+[submodule "GabeTeX-Windows"]
+	path = GabeTeX-Windows
+	url = https://github.com/gabe-rbo/GabeTeX-Windows.git

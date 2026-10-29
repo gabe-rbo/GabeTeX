@@ -1,0 +1,14 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Bug in the macOS app
+    url: https://github.com/gabe-rbo/GabeTeX-macOS/issues/new/choose
+    about: Crashes, compile problems, PDF sync and anything else specific to GabeTeX for macOS.
+  - name: Bug in the Linux app
+    url: https://github.com/gabe-rbo/GabeTeX-Linux/issues/new/choose
+    about: Problems specific to GabeTeX for Linux (in development).
+  - name: Bug in the Windows app
+    url: https://github.com/gabe-rbo/GabeTeX-Windows/issues/new/choose
+    about: Problems specific to GabeTeX for Windows (in development).
+  - name: GabeTeX website
+    url: https://gabe-rbo.github.io/GabeTeX/
+    about: Download GabeTeX and read more about the project.
