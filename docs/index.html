@@ -675,7 +675,7 @@ figcaption { margin: 14px auto 0; max-width: var(--max-text); text-align: center
         </a>
         <a class="pill pill-ghost" href="https://github.com/gabe-rbo/GabeTeX" data-i18n="hero.github">View on GitHub</a>
       </div>
-      <p class="also h-3" id="hero-also"><span class="also-def" data-i18n="hero.also">Linux and Windows editions (Tauri) are in development: <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases">coming soon</a>.</span><span class="also-linux" data-i18n="hero.alsoLinux">GabeTeX is native to macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Download for Mac</a>). The Linux edition, built with Tauri, has no release yet: <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases">coming soon</a>.</span><span class="also-win" data-i18n="hero.alsoWin">GabeTeX is native to macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Download for Mac</a>). The Windows edition, built with Tauri, has no release yet: <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases">coming soon</a>.</span></p>
+      <p class="also h-3" id="hero-also"><span class="also-def" data-i18n="hero.also">Also available for Linux (<a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-x86_64.AppImage">.AppImage</a> / <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a>) and Windows (<a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64-setup.exe">.exe</a>).</span><span class="also-linux" data-i18n="hero.alsoLinux">GabeTeX is native to macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Download for Mac</a>). This is the Linux edition, built with Tauri; on Debian or Ubuntu, get the <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a> instead.</span><span class="also-win" data-i18n="hero.alsoWin">GabeTeX is native to macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Download for Mac</a>). This is the Windows edition, built with Tauri; an <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64.msi">.msi</a> is also available.</span></p>
       <div class="meta-slot h-4" id="meta-slot">
         <p class="meta"><span class="num" id="ver">v1.0.0</span><span class="num" id="size" hidden></span><span data-i18n="hero.os">macOS 26 or later (Apple Silicon)</span><span data-i18n="hero.os2">Linux and Windows</span><span data-i18n="hero.free">free and open source</span></p>
         <p class="next"><a href="#install" data-i18n="hero.next">Next: install and open GabeTeX</a></p>
@@ -1028,22 +1028,22 @@ figcaption { margin: 14px auto 0; max-width: var(--max-text); text-align: center
       <div class="why reveal">
         <div>
           <h3 data-i18n="inst.linux">Linux</h3>
-          <p data-i18n="inst.linuxt">Linux builds (<code>.AppImage</code> and <code>.deb</code>, x86_64) will appear on the <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases">releases page</a> of GabeTeX-Linux-Windows. There is no release yet; until then you can build it from source.</p>
+          <p data-i18n="inst.linuxt">Download the <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-x86_64.AppImage">.AppImage</a>, make it executable and run it (x86_64). On Debian or Ubuntu you can install the <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a> instead.</p>
         </div>
         <div class="code">
           <div class="code-head"><span>Terminal</span><button type="button" class="copy-btn" data-copy="cmd-linux"><svg viewBox="0 0 14 14" aria-hidden="true"><rect x="4.25" y="4.25" width="8" height="8" rx="2" class="ico" stroke-width="1.4"/><path d="M9.75 2.75v-.1A1.6 1.6 0 0 0 8.15 1H3.4a1.6 1.6 0 0 0-1.6 1.6v4.8A1.6 1.6 0 0 0 3.4 9h.1" class="ico" stroke-width="1.4"/></svg><span class="stack"><span class="def" data-i18n="copy">Copy</span><span class="alt" aria-hidden="true" data-i18n="copied">Copied</span></span></button></div>
-          <pre id="cmd-linux"><code>git clone https://github.com/gabe-rbo/GabeTeX-Linux-Windows.git
-cd GabeTeX-Linux-Windows
-npm install
-npm run tauri build</code></pre>
+          <pre id="cmd-linux"><code>chmod +x GabeTeX-linux-x86_64.AppImage
+./GabeTeX-linux-x86_64.AppImage
+
+sudo apt install ./GabeTeX-linux-amd64.deb</code></pre>
         </div>
       </div>
       <div class="note reveal">
         <div>
           <h3 data-i18n="inst.win">Windows</h3>
-          <p data-i18n="inst.wint">Windows builds (<code>.exe</code> installer and <code>.msi</code>) will appear on the <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases">releases page</a> of GabeTeX-Linux-Windows. There is no release yet, and the Windows build has so far only been compiled in CI. Installers will not be code-signed, so SmartScreen may warn you.</p>
+          <p data-i18n="inst.wint">Run <code>GabeTeX-windows-x64-setup.exe</code> (an <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64.msi">.msi</a> is also available). The installer isn’t code-signed, so SmartScreen may say Windows protected your PC: click More info › Run anyway. You only do this once.</p>
         </div>
-        <a class="pill pill-ghost" href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases" data-i18n="inst.releases">Releases (coming soon)</a>
+        <a class="pill pill-fill" href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64-setup.exe" data-i18n="hero.downloadWindows">Download for Windows</a>
       </div>
       <div class="note reveal">
         <div>
@@ -1127,7 +1127,7 @@ Scripts/build-app.sh</code></pre>
   var REPO = 'gabe-rbo/GabeTeX-macOS';
   var API = 'https://api.github.com/repos/' + REPO + '/releases?per_page=30';
   var RELEASES_URL = 'https://github.com/' + REPO + '/releases';
-  var LW_RELEASES = 'https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases'; /* no Linux/Windows release yet: link to the releases page */
+  var LW_RELEASES = 'https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases'; /* Linux/Windows edition (Tauri) */
   var LATEST_DMG = RELEASES_URL + '/latest/download/GabeTeX.dmg';
   var CACHE_KEY = 'gabetex.releases.v1';
   var CACHE_MS = 10 * 60 * 1000;
@@ -1147,13 +1147,13 @@ Scripts/build-app.sh</code></pre>
     'hero.iconAlt': 'Ícone do app GabeTeX',
     'hero.lead': 'Um editor LaTeX nativo para macOS, feito para quem escreve matemática em projetos de vários arquivos.',
     'hero.download': 'Baixar para Mac',
-    'hero.downloadLinux': 'Linux: em breve',
-    'hero.downloadWindows': 'Windows: em breve',
+    'hero.downloadLinux': 'Baixar para Linux',
+    'hero.downloadWindows': 'Baixar para Windows',
     'hero.started': 'Download iniciado',
     'hero.github': 'Ver no GitHub',
-    'hero.also': 'As edições para Linux e Windows (Tauri) estão em desenvolvimento: <a href=\"https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases\">em breve</a>.',
-    'hero.alsoLinux': 'O GabeTeX é nativo do macOS (<a href=\"https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg\">Baixar para Mac</a>). A edição para Linux, feita com Tauri, ainda não tem versão publicada: <a href=\"https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases\">em breve</a>.',
-    'hero.alsoWin': 'O GabeTeX é nativo do macOS (<a href=\"https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg\">Baixar para Mac</a>). A edição para Windows, feita com Tauri, ainda não tem versão publicada: <a href=\"https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases\">em breve</a>.',
+    'hero.also': 'Também disponível para Linux (<a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-x86_64.AppImage">.AppImage</a> / <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a>) e Windows (<a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64-setup.exe">.exe</a>).',
+    'hero.alsoLinux': 'O GabeTeX é nativo do macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Baixar para Mac</a>). Esta é a edição para Linux, feita com Tauri; no Debian ou no Ubuntu, baixe o <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a>.',
+    'hero.alsoWin': 'O GabeTeX é nativo do macOS (<a href="https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg">Baixar para Mac</a>). Esta é a edição para Windows, feita com Tauri; também há um <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64.msi">.msi</a>.',
     'hero.os': 'macOS 26 ou posterior (Apple Silicon)',
     'hero.os2': 'Linux e Windows',
     'hero.free': 'livre e de código aberto',
@@ -1250,10 +1250,9 @@ Scripts/build-app.sh</code></pre>
     'inst.other': 'Linux e Windows',
     'inst.othert': 'O GabeTeX é nativo do macOS e também está disponível para Linux e Windows. Essa edição é feita com Tauri, então usa o web view que já vem no sistema em vez de embutir um navegador: poucos megabytes, abre rápido e foi feita para ter a cara do app do Mac. Não é um app com toolkit nativo, e recursos exclusivos do Mac, como a Touch Bar, não fazem parte dela.',
     'inst.linux': 'Linux',
-    'inst.linuxt': 'As versões para Linux (<code>.AppImage</code> e <code>.deb</code>, x86_64) aparecerão na <a href=\"https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases\">página de versões</a> do GabeTeX-Linux-Windows. Ainda não há versão publicada; por enquanto dá para compilar a partir do código.',
-    'inst.releases': 'Versões (em breve)',
+    'inst.linuxt': 'Baixe o <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-x86_64.AppImage">.AppImage</a>, torne-o executável e execute (x86_64). No Debian ou no Ubuntu, você pode instalar o <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-linux-amd64.deb">.deb</a>.',
     'inst.win': 'Windows',
-    'inst.wint': 'As versões para Windows (instalador <code>.exe</code> e <code>.msi</code>) aparecerão na <a href=\"https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases\">página de versões</a> do GabeTeX-Linux-Windows. Ainda não há versão publicada, e o build do Windows só foi compilado no CI até agora. Os instaladores não serão assinados, então o SmartScreen pode avisar.',
+    'inst.wint': 'Execute o <code>GabeTeX-windows-x64-setup.exe</code> (também há um <a href="https://github.com/gabe-rbo/GabeTeX-Linux-Windows/releases/latest/download/GabeTeX-windows-x64.msi">.msi</a>). O instalador não é assinado, então o SmartScreen pode dizer que o Windows protegeu o computador: clique em Mais informações › Executar assim mesmo. Isso só é preciso uma vez.',
     'inst.tex2': 'No Linux e no Windows também é preciso uma distribuição TeX.',
     'inst.tex2t': 'Use o TeX Live no Linux e o TeX Live ou o MiKTeX no Windows.',
     'inst.texlive': 'Baixar o TeX Live',
@@ -1309,8 +1308,8 @@ Scripts/build-app.sh</code></pre>
     'js.empty': 'No releases yet.',
     'js.repo': 'View the repository on GitHub',
     'js.copiedLive': 'Command copied.',
-    'hero.downloadLinux': 'Linux: coming soon',
-    'hero.downloadWindows': 'Windows: coming soon',
+    'hero.downloadLinux': 'Download for Linux',
+    'hero.downloadWindows': 'Download for Windows',
     'js.title': document.title,
     'js.titleVersions': 'Versions — GabeTeX',
     'js.desc': (document.querySelector('meta[name="description"]') || {}).content || ''
@@ -1429,8 +1428,8 @@ Scripts/build-app.sh</code></pre>
     return 'mac';
   })();
   var OS_ASSET = {
-    linux: [LW_RELEASES, 'hero.downloadLinux'],
-    windows: [LW_RELEASES, 'hero.downloadWindows']
+    linux: [LW_RELEASES + '/latest/download/GabeTeX-linux-x86_64.AppImage', 'hero.downloadLinux'],
+    windows: [LW_RELEASES + '/latest/download/GabeTeX-windows-x64-setup.exe', 'hero.downloadWindows']
   };
   if (OS_ASSET[OS]) {
     root.setAttribute('data-os', OS);
