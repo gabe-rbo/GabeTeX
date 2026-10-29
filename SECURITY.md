@@ -1,11 +1,10 @@
 # Security Policy
 
-GabeTeX is split into one repository per platform. Security reports go to the repository of the app that is affected,
+GabeTeX is split into one repository per edition (macOS, and Linux + Windows). Security reports go to the repository of the app that is affected,
 using GitHub's private vulnerability reporting (**Security** tab > **Report a vulnerability**):
 
 - macOS: [GabeTeX-macOS](https://github.com/gabe-rbo/GabeTeX-macOS/security)
-- Linux: [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux/security)
-- Windows: [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows/security)
+- Linux and Windows: [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows/security)
 
 If you are not sure which one applies, or the problem concerns the website, report it privately in this repository's
 [Security tab](https://github.com/gabe-rbo/GabeTeX/security).

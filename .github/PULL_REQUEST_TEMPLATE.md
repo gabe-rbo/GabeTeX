@@ -5,7 +5,7 @@
 ## Scope
 
 <!-- This repository holds the website (docs/), community files and the submodule pointers.
-     Changes to an app belong in GabeTeX-macOS, GabeTeX-Linux or GabeTeX-Windows. -->
+     Changes to an app belong in GabeTeX-macOS or GabeTeX-Linux-Windows. -->
 
 - [ ] Website (`docs/`)
 - [ ] Community files (README, CONTRIBUTING, templates, ...)

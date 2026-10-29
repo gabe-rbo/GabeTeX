@@ -6,7 +6,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for suggesting an idea. Please search the existing issues first, in case it is already planned. If the idea is specific to one platform, the matching platform repository (GabeTeX-macOS, GabeTeX-Linux, GabeTeX-Windows) is the better place.
+        Thanks for suggesting an idea. Please search the existing issues first, in case it is already planned. If the idea is specific to one platform, the matching platform repository (GabeTeX-macOS or GabeTeX-Linux-Windows) is the better place.
         Issues in Portuguese are welcome too. Pode escrever em português.
   - type: textarea
     id: problem

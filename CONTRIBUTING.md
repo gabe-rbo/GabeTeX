@@ -13,8 +13,7 @@ GabeTeX is one project in several repositories. This one is the umbrella; the ap
 | You want to change or report... | Go to | Guide |
 |---|---|---|
 | The macOS app (Swift, SwiftUI/AppKit) | [GabeTeX-macOS](https://github.com/gabe-rbo/GabeTeX-macOS) | [CONTRIBUTING](https://github.com/gabe-rbo/GabeTeX-macOS/blob/main/CONTRIBUTING.md) |
-| The Linux app (Tauri 2, in development) | [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux) | [CONTRIBUTING](https://github.com/gabe-rbo/GabeTeX-Linux/blob/main/CONTRIBUTING.md) |
-| The Windows app (Tauri 2, in development) | [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows) | [CONTRIBUTING](https://github.com/gabe-rbo/GabeTeX-Windows/blob/main/CONTRIBUTING.md) |
+| The Linux and Windows apps (one Tauri 2 codebase, in development) | [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows) | [CONTRIBUTING](https://github.com/gabe-rbo/GabeTeX-Linux-Windows/blob/main/CONTRIBUTING.md) |
 | The website (`docs/`), the READMEs, community files, templates | this repository | below |
 | An idea that spans platforms, or you are not sure | this repository (open an issue) | below |
 

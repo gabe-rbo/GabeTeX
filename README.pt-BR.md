@@ -41,8 +41,7 @@
 | Plataforma | Situação | Tecnologia | Repositório | Download |
 |---|---|---|---|---|
 | **macOS** | Disponível | Swift, SwiftUI e AppKit (macOS 26+, Apple Silicon) | [GabeTeX-macOS](https://github.com/gabe-rbo/GabeTeX-macOS) | [Versões](https://github.com/gabe-rbo/GabeTeX-macOS/releases) · [GabeTeX.dmg](https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg) |
-| **Linux** | Em desenvolvimento | Tauri 2 | [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux) | Ainda não lançado |
-| **Windows** | Em desenvolvimento | Tauri 2 | [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows) | Ainda não lançado |
+| **Linux e Windows** | Em desenvolvimento (interface implementada, testada no Linux; Windows só compilado no CI) | Tauri 2 (Rust + TypeScript), um único código-fonte | [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows) | Ainda sem versão. Previstos: AppImage, `.deb`, `.exe`, `.msi` |
 
 ## Por que o GabeTeX
 
@@ -90,8 +89,8 @@ um editor que trate isso como o caso normal. Ele tem três objetivos:
   arraste o app para Aplicativos e instale uma distribuição TeX, como o [MacTeX](https://tug.org/mactex/).
   Instruções de instalação, o passo "Abrir Mesmo Assim" do primeiro uso, atalhos e como compilar estão no
   [README do GabeTeX-macOS](https://github.com/gabe-rbo/GabeTeX-macOS#readme).
-- **Linux e Windows:** ainda não lançados. Acompanhe o [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux) e o
-  [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows).
+- **Linux e Windows:** ainda não lançados. Um único código Tauri 2 atende os dois sistemas; acompanhe o
+  [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows) (pacotes previstos: AppImage, `.deb`, `.exe`, `.msi`).
 
 O [site](https://gabe-rbo.github.io/GabeTeX/) lista todas as versões do macOS, com as notas de cada uma.
 
@@ -99,9 +98,8 @@ O [site](https://gabe-rbo.github.io/GabeTeX/) lista todas as versões do macOS, 
 
 ```text
 GabeTeX/
-├── GabeTeX-macOS/     submódulo → github.com/gabe-rbo/GabeTeX-macOS   (app Swift, versões, CI)
-├── GabeTeX-Linux/     submódulo → github.com/gabe-rbo/GabeTeX-Linux   (Tauri 2, em desenvolvimento)
-├── GabeTeX-Windows/   submódulo → github.com/gabe-rbo/GabeTeX-Windows (Tauri 2, em desenvolvimento)
+├── GabeTeX-macOS/          submódulo → github.com/gabe-rbo/GabeTeX-macOS   (app Swift, versões, CI)
+├── GabeTeX-Linux-Windows/  submódulo → github.com/gabe-rbo/GabeTeX-Linux-Windows (Tauri 2, em desenvolvimento)
 ├── docs/              o site do GabeTeX (GitHub Pages)
 ├── .github/           modelos de issue e de pull request, workflow do Pages
 ├── CHANGELOG.md  CONTRIBUTING.md  CODE_OF_CONDUCT.md  SECURITY.md  LICENSE

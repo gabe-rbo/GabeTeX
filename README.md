@@ -33,16 +33,15 @@
 
 ---
 
-> This is the **umbrella repository** of GabeTeX. It holds the website, the community files and one Git submodule per
-> platform. The apps themselves, with their build instructions, releases and issues, live in the platform repositories below.
+> This is the **umbrella repository** of GabeTeX. It holds the website, the community files and two Git submodules, one per
+> edition (macOS, and Linux + Windows). The apps themselves, with their build instructions, releases and issues, live in the two platform repositories below.
 
 ## Platforms
 
 | Platform | Status | Technology | Repository | Download |
 |---|---|---|---|---|
 | **macOS** | Available | Swift, SwiftUI and AppKit (macOS 26+, Apple Silicon) | [GabeTeX-macOS](https://github.com/gabe-rbo/GabeTeX-macOS) | [Releases](https://github.com/gabe-rbo/GabeTeX-macOS/releases) · [GabeTeX.dmg](https://github.com/gabe-rbo/GabeTeX-macOS/releases/latest/download/GabeTeX.dmg) |
-| **Linux** | In development | Tauri 2 | [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux) | Not released yet |
-| **Windows** | In development | Tauri 2 | [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows) | Not released yet |
+| **Linux & Windows** | In development (UI implemented, tested on Linux; Windows only built in CI) | Tauri 2 (Rust + TypeScript), one shared codebase | [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows) | No release yet. Planned: AppImage, `.deb`, `.exe`, `.msi` |
 
 ## Why GabeTeX
 
@@ -89,8 +88,8 @@ editor that treats that as the normal case. It has three goals:
   drag the app to Applications, and install a TeX distribution such as [MacTeX](https://tug.org/mactex/).
   Installation notes, the first-launch "Open Anyway" step, shortcuts and build instructions are in the
   [GabeTeX-macOS README](https://github.com/gabe-rbo/GabeTeX-macOS#readme).
-- **Linux and Windows:** not released yet. Follow [GabeTeX-Linux](https://github.com/gabe-rbo/GabeTeX-Linux) and
-  [GabeTeX-Windows](https://github.com/gabe-rbo/GabeTeX-Windows).
+- **Linux and Windows:** not released yet. One Tauri 2 codebase serves both systems; follow
+  [GabeTeX-Linux-Windows](https://github.com/gabe-rbo/GabeTeX-Linux-Windows) (planned packages: AppImage, `.deb`, `.exe`, `.msi`).
 
 The [website](https://gabe-rbo.github.io/GabeTeX/) lists every macOS version with its release notes.
 
@@ -98,16 +97,15 @@ The [website](https://gabe-rbo.github.io/GabeTeX/) lists every macOS version wit
 
 ```text
 GabeTeX/
-├── GabeTeX-macOS/     submodule → github.com/gabe-rbo/GabeTeX-macOS   (Swift app, releases, CI)
-├── GabeTeX-Linux/     submodule → github.com/gabe-rbo/GabeTeX-Linux   (Tauri 2, in development)
-├── GabeTeX-Windows/   submodule → github.com/gabe-rbo/GabeTeX-Windows (Tauri 2, in development)
+├── GabeTeX-macOS/          submodule → github.com/gabe-rbo/GabeTeX-macOS   (Swift app, releases, CI)
+├── GabeTeX-Linux-Windows/  submodule → github.com/gabe-rbo/GabeTeX-Linux-Windows (Tauri 2, in development)
 ├── docs/              the GabeTeX website (GitHub Pages)
 ├── .github/           issue and pull request templates, Pages workflow
 ├── CHANGELOG.md  CONTRIBUTING.md  CODE_OF_CONDUCT.md  SECURITY.md  LICENSE
 └── README.md  README.pt-BR.md
 ```
 
-Each platform is an independent repository with its own history, issues and releases. This repository pins a specific
+Each edition (macOS; Linux + Windows) is an independent repository with its own history, issues and releases. This repository pins a specific
 commit of each one.
 
 Clone everything at once:
